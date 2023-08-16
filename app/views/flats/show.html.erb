@@ -33,10 +33,21 @@
         <h3>Details</h3>
         <div class="flex">
           <div class="flex">
-            3 people
+            <i class="fa-solid fa-users"></i><%= @flat.number_of_guests %>
           </div>
-          <div class="flex ms-3">
-            75€
+          <div class="flex">
+            <i class="fa-solid fa-euro-sign"></i><%= @flat.price_per_night %>
+          </div>
+        </div>
+      </div>
+      <div class="show-card">
+        <div class="flex-align">
+          <h6 class="no-mb">Share</h6>
+
+          <div class="flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
       </div>
