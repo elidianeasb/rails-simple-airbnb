@@ -1,0 +1,16 @@
+<div class="card mt-5 shadow-sm" style="width: 25rem;" id="<%= dom_id flat %>" >
+  <img src="<%= flat.picture %>" class="card-img-top" alt="...">
+  <div class="card-body "  style="background-color:#F8F9FA;">
+    <h3 class="card-text"><%= flat.name %></h3>
+    <p><%= flat.address %></p>
+    <div class="d-flex ms-2">
+      <p class="ms-4"><i class="fa-solid fa-users"></i><%= flat.number_of_guests %></p>
+      <p class="ms-4"><i class="fa-solid fa-euro-sign"></i><%= flat.price_per_night %></p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <%= link_to "More info", flat_path(flat), class:"p-2" %>
+      <%= link_to "Edit", edit_flat_path(flat), class:"p-2 btn-edit" %>
+      <%= button_to "Remove", flat, method: :delete, class:"btn-delete" %>
+    </div>
+  </div>
+</div>
